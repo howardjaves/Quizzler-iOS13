@@ -79,7 +79,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="URC-sF-TfY"/>
+                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QJ9-A0-ELO"/>
                                         </connections>
                                     </button>
                                     <progressView opaque="NO" contentMode="scaleToFill" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TXm-qh-7Xg">
@@ -108,12 +108,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="answerButton1" destination="oVw-Hl-IRe" id="UyZ-rS-3zy"/>
-                        <outlet property="answerButton2" destination="67W-3r-Fbg" id="Kif-a4-8AH"/>
-                        <outlet property="answerButton3" destination="tbn-vQ-GyC" id="d60-0B-aCA"/>
                         <outlet property="progressBar" destination="TXm-qh-7Xg" id="CWk-cQ-f0J"/>
                         <outlet property="questionLabel" destination="rSI-li-mhO" id="kIg-kU-fFl"/>
                         <outlet property="scoreLabel" destination="s27-mK-Lmz" id="1Zd-OD-ZZk"/>
+                        <outletCollection property="answerButtons" destination="oVw-Hl-IRe" collectionClass="NSMutableArray" id="bOv-tk-KyS"/>
+                        <outletCollection property="answerButtons" destination="67W-3r-Fbg" collectionClass="NSMutableArray" id="hfD-4P-koj"/>
+                        <outletCollection property="answerButtons" destination="tbn-vQ-GyC" collectionClass="NSMutableArray" id="NNd-b7-dqG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
